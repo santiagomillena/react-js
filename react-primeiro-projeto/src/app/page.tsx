@@ -1,13 +1,15 @@
-import { Square,Circle } from "@/components/Geo";
+import { Circle } from "@/components/Circle";
+import { GeoForm } from "@/components/GeoForm";
+import { Person } from "@/components/Person";
+import { Square } from "@/components/Square";
 
-function Page(){
+const Page = () => {
   return (
     <div>
       <h1 className="text-indigo-700 font-bold text-xl" >Olá Mundo</h1>
       <h2>Primeiro componente em react</h2>
-
-    <Square/>
-    <Circle/>
+      <GeoForm/>
+      <Person/>
     </div>
   );
 }
