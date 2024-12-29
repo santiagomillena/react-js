@@ -3,6 +3,7 @@ import { GeoForm } from "@/components/GeoForm";
 import { NewPerson } from "@/components/NewPerson";
 import { Person } from "@/components/Person";
 import { Square } from "@/components/Square";
+import { Card } from "@/components/Card";
 
 const Page = () => {
   return (
@@ -33,7 +34,11 @@ const Page = () => {
       roles={['Main Vocalist', 'Lead Dancer']}
       />
 
+      <Card>
+        <h3 className="text-3xl font-bold text-green-300">"Frase de efeito"</h3>
+        <p className="text-right text-sm">- Autor desconhecido.</p>
 
+      </Card>
     </div>
   );
 }
