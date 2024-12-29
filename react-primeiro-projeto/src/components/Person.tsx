@@ -2,6 +2,12 @@ const getToday = () => {
     return new Intl.DateTimeFormat('pt-BR',{weekday: 'long'}).format(new Date());
 }
 
+type Props = {
+    name: String;
+    avatar: String;
+    roles: String[];
+}
+
 export const Person = () => {
     const name: string = 'Asa - BABYMONS7ER';
     const avatar: string = 'https://steamuserimages-a.akamaihd.net/ugc/2256927774995748009/10BAAC39751C2696247C40E909CEBF2D394EDCD1/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false'
@@ -15,7 +21,7 @@ export const Person = () => {
 
     return (
         <div className="container mx-auto" >
-{/* Sem script */}
+    {/* Sem script */}
 
             <h1 className="text-center" >Asa - BABYMONS7ER</h1>
             <div className="flex">
@@ -28,7 +34,7 @@ export const Person = () => {
                 </ul>
             </div>
 
-{/* JSX e variáveis, funções e objetos */}
+    {/* JSX e variáveis, funções e objetos */}
 
             <h1>{name}</h1>
             <div className="flex">
