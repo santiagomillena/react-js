@@ -4,6 +4,7 @@ import { NewPerson } from "@/components/NewPerson";
 import { Person } from "@/components/Person";
 import { Square } from "@/components/Square";
 import { Card } from "@/components/Card";
+import { CondCard } from "@/components/Conditional";
 
 const Page = () => {
   return (
@@ -39,6 +40,8 @@ const Page = () => {
         <p className="text-right text-sm">- Autor desconhecido.</p>
 
       </Card>
+
+      <CondCard phrase="I'm on the next level" author="Winter"></CondCard>
     </div>
   );
 }
